@@ -1,0 +1,425 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 1980px;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+/* логотип и поиск */ 
+
+.header_top{
+    width: 1020px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px; 
+    background-color: #ffffff;
+}
+
+.logo{
+    font-size: 49px;
+    font-family: "Lobster1.4";
+    color: rgb(60, 195, 181);
+    line-height: 0.388;
+    text-transform: capitalize;
+}
+
+input[type="search"]{
+    width: 436px;
+    height: 33px;
+}
+
+.basket_note{
+    font-size: 33px;
+    font-family: "Bebas Neue";
+    color: rgb(161, 161, 161);
+    line-height: 0.576;
+}
+
+/* Навигация по странице */
+nav{
+    background-color: #4ccfc1;
+}
+
+.nav_wrap{
+    width: 1020px;
+    margin: 0 auto;
+}
+
+.nav_wrap ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 36px;
+    margin: 0 auto;
+}
+
+.nav_wrap ul li{
+    /* border-right: 1px solid #20877c; */
+    display: block;
+    padding: 8px 20px;
+
+}
+
+.nav_wrap ul li a{
+    font-size: 21px;
+    font-family: "Bebas Neue";
+    text-transform: uppercase; 
+    line-height: 0.905;   
+    color: rgb(255, 255, 255);
+    font-weight: lighter;
+}
+
+.nav_wrap ul li:hover{
+    background-color: #20877c;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* слайдер */
+.slider{
+    background-color: #39bfb9;
+    height: 445px;
+}
+
+.slider_wrap{
+    height: 330px;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 68px;
+}
+
+.product_example{
+    margin-left: 100px;
+    width: 280px;
+    height: 330px;
+    background: url(image/lavis.png) no-repeat;
+}
+
+.annotation{
+    margin-right: 170px;
+    width: 413px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 200px;
+} 
+
+.annotation h1{
+    font-size: 61px;
+    font-family: "Bebas Neue";
+    color: rgb(255, 255, 255);
+    line-height: 0.885;
+    text-align: left;
+    margin-bottom: 24px;
+    font-weight: lighter;
+}
+
+.annotation p{
+    font-size: 17px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.647;
+    text-align: left; 
+    margin-bottom: 24px;    
+}
+
+.annotation input[type=button]{
+    width: 140px;
+    height: 45px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    background-color: #39bfb9;
+    text-transform: uppercase;
+    font-size: 27px;
+    font-family: "Bebas Neue";
+    color: rgb(255, 255, 255);
+    line-height: 0.704;
+}
+
+/* смена слайдера */
+
+.points{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 100px;
+    height: 10px;
+}
+
+.points div{
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    width: 9px;
+    height: 9px;
+}
+
+/*///////////////////////// указание категорий ///////////////////////////*/
+
+.categories{
+    margin: 0 auto;
+    width: 1024px;
+    height: 193px;
+    display: flex;
+}
+
+.categories>div{
+    display: flex;
+    align-items: center;
+}
+
+.categories>div:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.8s ease 0s;
+}
+
+.categories>div:not(:hover){
+    transition: all 0.8s ease 0s;
+}
+
+.categories>div:nth-child(3){
+    border: none;
+}
+
+/* картины категорий */
+.categories_img{
+    background: url(image/shoes.png);
+    width: 217px;
+    height: 151px;
+}
+
+.categories div:nth-child(2) .categories_img{
+    background: url(image/tshirt.png) no-repeat center;
+
+}
+
+.categories div:last-child .categories_img{
+    background: url(image/pants.png) no-repeat center;
+}
+
+/* описание категории */
+.categories_annotation{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 65px;
+}
+
+.categories_annotation h3{
+    font-size: 27px;
+    font-family: "Bebas Neue";
+    color: rgb(175, 175, 175);
+    line-height: 0.926;      
+}
+
+/* кнопка */
+.categories_annotation input{
+    margin-top: 20px;
+    border-radius: 3px;
+    border: 1px solid rgb(60, 195, 149);
+    background-color: rgb(60, 195, 149);
+    width: 59px;
+    height: 32px;
+    font-size: 19px;
+    font-family: "Bebas Neue";
+    color: rgb(255, 255, 255);
+    line-height: 1;
+}
+
+/* /////////////////// Примеры продукции ///////////////////////// */
+
+.feature{
+    font-size: 31px;
+    font-family: "Bebas Neue";
+    color: rgb(255, 255, 255);
+    line-height: 0.806;
+    height: 43px;
+    background-color: #39bfb9;
+    padding-left: 185px;
+    padding-top: 25px;
+    font-weight: lighter;
+}
+
+.examples{
+    margin-left: 190px;
+    width: 1024px;
+    height: 590px;
+    display: grid;
+    grid-template-columns: 260px 260px 260px;
+    grid-template-rows: 260px 260px;
+    grid-gap: 55px;
+    margin-top: 55px;
+    margin-bottom: 55px;
+}
+
+/* статьи категорий */
+.examples > div {
+    border: 1px solid #e4e4e4;
+    border-bottom: 5px solid #3cc395;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.examples>div:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: all 0.8s ease 0s;
+}
+
+.examples>div:not(:hover){
+    transition: all 0.8s ease 0s;
+}
+
+/* картинки категорий */
+.examples div .product_img {
+    width: 189px;
+    height: 126px;
+    background: url(image/woman-shoes.png) no-repeat center;
+}
+
+.examples div:nth-child(2) .product_img{
+    width: 116px;
+    height: 126px;
+    background: url(image/lavis_tshirt.png) no-repeat center;
+}
+
+.examples div:nth-child(3) .product_img{
+    width: 116px;
+    height: 126px;
+    background: url(image/white_tshirt.png) no-repeat center;
+}
+
+.examples div:nth-child(4) .product_img{
+    width: 175px;
+    height: 126px;
+    background: url(image/wallet.png) no-repeat center;
+}
+
+.examples div:nth-child(5) .product_img{
+    width: 175px;
+    height: 126px;
+    background: url(image/woman_bag.png) no-repeat center;
+}
+
+.examples div:nth-child(6) .product_img{
+    width: 175px;
+    height: 126px;
+    background: url(image/pants.png) no-repeat center;
+}
+
+/* Надпись-описание товара */
+  
+.examples div h3{
+    font-size: 27px;
+    font-family: "Bebas Neue";
+    color: rgb(175, 175, 175);
+    line-height: 0.926;
+    font-weight: lighter;
+    margin-top: 12px;
+}
+
+.examples div div:last-child{
+    height: 40px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* кнопка покупки */
+
+.examples div input{
+    border-radius: 3px;
+    border: 1px solid rgb(60, 195, 149);
+    background-color: rgb(60, 195, 149);
+    width: 74px;
+    height: 34px;
+    text-transform: uppercase;
+    font-size: 19px;
+    font-family: "Bebas Neue";
+    color: rgb(255, 255, 255);
+}
+
+/* Цена */
+
+.examples div span{
+    font-size: 27px;
+    font-family: "Bebas Neue";
+    color: rgb(175, 175, 175);
+    line-height: 0.926;
+    font-weight: lighter;
+    margin-left: 12px;
+}
+
+
+/*/////////////////////////// Подвал сайта//////////////////////////  */
+
+footer{
+    height: 384px;
+    background-color: #3cc3b5;
+}
+
+.other_categories{
+    height: 338px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 180px;
+    padding-right: 240px;
+}
+
+.other_categories div h3{
+    text-transform: uppercase;
+    font-size: 27px;
+    font-family: "Bebas Neue";
+    color: rgb(255, 255, 255);
+    line-height: 0.926;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.other_categories div ul li a{
+    font-size: 15px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.867;
+    margin-left: 5px;
+}
+
+.other_categories div ul li a:hover{
+    color: #083c34;
+}
+  
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 46px;
+    background-color: #0b806e;
+}
+
+.copyright span{
+    font-size: 15px;
+    font-family: "Open Sans";
+    color: rgb(255, 255, 255);
+    line-height: 1.867;
+}
